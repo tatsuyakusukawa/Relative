@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+#directory-tree {
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+.folder, .file {
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: 1px solid #777;
+}
+
+.folder {
+    color: #4CAF50;
+}
+
+.file {
+    color: #FFD700;
+}
+
+#relative-path-display {
+    margin-top: 20px;
+    font-size: 18px;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.highlight {
+    border: 2px solid #4caf50;
+}
+
+#controls {
+    margin: 10px 0;
+}
+
+/* インデントをディレクトリの階層に応じて設定 */
+.directory .folder, .directory .file {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#sampleImage{
+    background-color: antiquewhite;
+    color: #282c34;
+}

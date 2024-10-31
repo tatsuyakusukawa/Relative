@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>プロジェクトディレクトリの相対パス理解</title>
+</head>
+<body>
+    <h1>index.htmlからみた”sample.jpg”の相対パスシュミレーター</h1>
+
+    <!-- ディレクトリツリー -->
+    <div id="">
+        <div class="folder" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+            PJ_file/
+            <div class="directory nested">
+                <div class="folder" draggable="true" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    images/
+                    <div class="directory nested">
+                        <div class="file" draggable="true" id="sampleImage" ondragstart="drag(event)">sample.jpg</div>
+                    </div>
+                </div>
+                <div class="file" draggable="true" id="indexFile" ondragstart="drag(event)">index.html</div>
+                <div class="file" draggable="true" id="scriptFile" ondragstart="drag(event)">script.js</div>
+                <div class="file" draggable="true" id="stylesFile" ondragstart="drag(event)">styles.css</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="relative-path-display">相対パス: </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
