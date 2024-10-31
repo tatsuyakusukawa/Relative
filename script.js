@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const sampleImage = document.getElementById("sampleImage");
         if (sampleImage) {
             const path = getRelativePath(sampleImage);
-            pathDisplay.textContent = `相対パス: ${path}`;
+            pathDisplay.textContent = `index.htmlのimgタグに入れるべき相対パス: <img src="${path}" alt="">
+            `;
         }
     }
 
